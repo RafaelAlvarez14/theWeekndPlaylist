@@ -1,0 +1,64 @@
+body {
+    background-image: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), url('background.jpg');    /* Ruta de la imagen de fondo */
+    background-attachment: fixed;               /* Hace que la imagen no se mueva al deslizar la página */
+    background-repeat: no-repeat;               /* Evita que la imagen se repita */
+    background-position: center;                /* Centra la imagen en la pantalla */
+    background-size: cover;                     /* Hace que la imagen cubra toda la pantalla */
+    /* Altura mínima para que se pueda ver el efecto de desplazamiento */
+    height: 100vh;
+    margin: 0;
+}
+
+.contenedor-grid {
+    display: grid;
+    grid-template-columns: 1fr 600px 1fr;       /* Crea 3 columnas: las de los lados se adaptan (1fr) y la del centro mide 600px */
+    min-height: 100vh;
+}
+
+.columna-centro {
+    grid-column: 2;                             /* Le dice al div que se ubique específicamente en la columna 2 */
+    padding: 20px;
+    text-align: center;
+}
+
+.columna-derecha {
+    grid-column: 3;                             /* Le dice al div que se ubique específicamente en la columna 2 */
+    display: flex;                              /* Convertimos la columna en un contenedor flexible */
+    justify-content: flex-end;                  /* Alinea el contenido abajo verticalmente */
+    align-items: flex-end;                      /* Alinea el contenido a la derecha horizontalmente */
+    padding: 10px;
+    text-align: right;
+}
+
+.contenido {
+    padding: 50px 50px 0 50px;
+    color: white;
+    font-family: sans-serif;
+}
+
+.black-ops-one-regular {
+  font-family: "Black Ops One", system-ui;
+  font-weight: 400;
+  font-style: normal;
+  font-size: xxx-large;
+}
+
+.dosis-one {
+  font-family: "Dosis", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 200;
+  font-style: normal;
+}
+
+.dosis-one-subtitle {
+    font-size: x-large;
+}
+
+.texto-izquierda {
+    text-align: left !important;
+    font-size: large;
+}
+
+.texto-copy {
+    font-size: small;
+}
